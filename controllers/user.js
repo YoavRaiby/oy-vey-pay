@@ -1,5 +1,5 @@
 const { z } = require("zod");
-const { signUpSchema, signInSchema, updateUserSchema } = require("../lib/validation/user");
+const { signUpSchema, signInSchema, updateUserSchema, userIdValidation } = require("../lib/validation/user");
 const User = require("../models/user");
 const bcrypt = require("bcrypt");
 const { setTokenCookie } = require("../lib/utils");
